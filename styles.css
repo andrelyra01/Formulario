@@ -4,6 +4,17 @@
   --color-muted: #9ca2ae
 }
 
+html {
+  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  --font-title: Georgia, 'Times New Roman', Times, serif;
+  --font-size: 1.2rem;
+  --color: #19f;
+  --color-light: #adf;
+  --color-dark: #018;
+  --radius: 0.2rem;
+}
+
 body {
   display: grid;
   place-items: center;
@@ -12,28 +23,6 @@ body {
   height: 100vh;
   background:#f1f5fb ;
  
-}
-
-@media (width >= 375px) {
-  
-  .card {
-    margin: 0;
-    width: 60vh;
-    max-width: 667px;
-  }
-  
-}
-
-
-
-@keyframes move {
-  100% {transform: translateY(-120px);
-  }
-}
-
-.background {
-  position: fixed;
-  inset: 0;
 }
 
 
@@ -118,25 +107,19 @@ body {
   color: var(--color-muted);
 }
 
-.material-symbols-outlined {
-  background: #222222;
-  margin-left: -10px;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
- 
-}
+
 
 .home {
+
+color: black;
   margin: -10px;
   width: 40px;
-  background-color: #222222;
-  border-radius: 50%;
+ 
 }
 
 .form {
   :is(input, button){
-    width: 90%;
+    width: 80%;
     height: 56px;
     border-radius: 8px;
     font-size: 16px;
@@ -157,18 +140,35 @@ body {
   background: rgb(0 0 0 / 4%);
 }
 
+
+
+@media (width >= 375px) {
+  
+  .card {
+    margin: 0;
+    width: 100vh;
+    max-width: 295px;
+  }
+  
+}
+
+
+
+@keyframes move {
+  100% {transform: translateY(-120px);
+  }
+}
+
+.background {
+  position: fixed;
+  inset: 0;
+}
+
+
+
 /* -------------------------- */
 
-html {
-  --font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
-    Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  --font-title: Georgia, 'Times New Roman', Times, serif;
-  --font-size: 1.2rem;
-  --color: #19f;
-  --color-light: #adf;
-  --color-dark: #018;
-  --radius: 0.2rem;
-}
+
 
 input:focus,
 textarea:focus {
